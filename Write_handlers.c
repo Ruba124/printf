@@ -15,7 +15,6 @@
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
 {
-       	/* char is stored at left and paddind at buffer's right */
 	int j = 0;
 	char padd = ' ';
 
@@ -227,7 +226,7 @@ int write_pointer(char buffer[], int ind, int length,
 				buffer[--ind] = extra_c;
 			return (write(1, &buffer[ind], length) + write(1, &buffer[3], j - 3));
 		}
-		else if (!(flags & FUN_MINUS) && padd == ' ')/* extra char to left of buffer */
+		else if (!(flags & FUN_MINUS) && padd == ' ')
 		{
 			buffer[--ind] = 'x';
 			buffer[--ind] = '0';
