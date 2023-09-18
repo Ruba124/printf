@@ -13,9 +13,9 @@ int g_flags(const char *format, int *i)
 	int r, c_i;
 	int the_flags = 0;
 	const char FLAGS_CH[] = {'-', '+', '0', '#', ' ', '\0'};
-	const int FLAGS_ARR[];
+	const int FLAGS_ARR[6];
 
-	FLAGS_ARR[] = {FUN_MINUS, FUN_PLUS, FUN_ZERO, FUN_HASH, FUN_SPACE, 0};
+	FLAGS_ARR[6] = {FUN_MINUS, FUN_PLUS, FUN_ZERO, FUN_HASH, FUN_SPACE, 0};
 
 	for (c_i = *i + 1; format[c_i] != '\0'; c_i++)
 	{
