@@ -13,9 +13,9 @@ int g_size(const char *format, int *i)
 	int the_size = 0;
 
 	if (format[c_i] == 'l')
-		the_size = S_LONG;
+		the_size = SZ_LONG;
 	else if (format[c_i] == 'h')
-		the_size = S_SHORT;
+		the_size = SZ_SHORT;
 
 	if (the_size == 0)
 		*i = c_i - 1;

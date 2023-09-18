@@ -16,11 +16,11 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 {
 	int j, unknow_len = 0, printed_chars = -1;
 	fmt_t fmt_types[] = {
-		{'c', print_char}, {'s', print_string}, {'%', print_percent},
-		{'j', print_int}, {'d', print_int}, {'b', print_binary},
-		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
-		{'X', print_hexa_upper}, {'p', print_pointer}, {'S', print_non_printable},
-		{'r', print_reverse}, {'R', print_rot13string}, {'\0', NULL}
+		{'c', p_char}, {'s', p_string}, {'%', p_percent},
+		{'j', p_int}, {'d', p_int}, {'b', p_binary},
+		{'u', p_unsigned}, {'o', p_octal}, {'x', p_hexadecimal},
+		{'X', p_hexa_upper}, {'p', p_pointer}, {'S', p_non_printable},
+		{'r', p_reverse}, {'R', p_rot13string}, {'\0', NULL}
 	};
 	for (j = 0; fmt_types[j].fmt != '\0'; j++)
 		if (fmt[*ind] == fmt_types[j].fmt)
