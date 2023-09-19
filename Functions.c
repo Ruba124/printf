@@ -56,7 +56,7 @@ int p_string(va_list types, char buffer[],
 
 	if (width > length)
 	{
-		if (flags & FUN_MINUS)
+		if (flags & N_MINUS)
 		{
 			write(1, &str[0], length);
 			for (j = width - length; j > 0; j--)

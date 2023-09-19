@@ -8,11 +8,11 @@
 #define BUFF_SIZE 1024
 
 /* FLAGS */
-#define FUN_MINUS 1
-#define FUN_PLUS 2
-#define FUN_ZERO 4
-#define FUN_HASH 8
-#define FUN_SPACE 16
+#define N_MINUS 1
+#define N_PLUS 2
+#define N_ZERO 4
+#define N_HASH 8
+#define N_SPACE 16
 
 /* SIZES */
 #define SZ_LONG 2

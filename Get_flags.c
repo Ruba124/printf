@@ -13,14 +13,8 @@ int g_flags(const char *format, int *i)
 	int r, c_i;
 	int the_flags = 0;
 	const char FLAGS_CH[] = {'-', '+', '0', '#', ' ', '\0'};
-	const int FLAGS_ARR[6];
+	const int FLAGS_ARR[6] = {N_MINUS, N_PLUS, N_ZERO, N_HASH, N_SPACE, 0};
 
-	FLAGS_ARR[6] = FUN_MINUS;
-   	FLAGS_ARR[7] = FUN_PLUS;
-   	FLAGS_ARR[8] = FUN_ZERO;
-   	FLAGS_ARR[9] = FUN_HASH;
-   	FLAGS_ARR[10] = FUN_SPACE;
-   	FLAGS_ARR[11] = 0;
 	for (c_i = *i + 1; format[c_i] != '\0'; c_i++)
 	{
 		for (r = 0; FLAGS_CH[r] != '\0'; r++)
